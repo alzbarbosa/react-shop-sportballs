@@ -19,19 +19,13 @@ export const CategoriesProvider = ({ children }) => {
         getCategoriesMap()
     }, [])
 
-
-/*
-    useEffect(()=> {
-        addCollectionAndDocuments('categories', SHOP_DATA)
-    }, [])
-*/
     const value = { categoriesMap }
     return (
         <CategoriesContext.Provider value={value}>{children}</CategoriesContext.Provider>
     )
 }
 
-/*
+/* to send products info to Firebase
 useEffect(()=> {
         addCollectionAndDocuments('categories', SPORT_BALLS_DATA)
     }, [])
